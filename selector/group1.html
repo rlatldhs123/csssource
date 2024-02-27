@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #title,
+      nav ~ h2 {
+        color: blue;
+      }
+
+      /*  모든 div에 자손요소  h2 를 블루 색상으로 바꿔라 { 공백을 주었기때문에} */
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. selector (선택자)
+          1) class  : 전역 속성인 클래스를 이용하기 
+          2) id : 전역 속성인 id 를 이용하기
+          3) tag : 태그 이용 (현재 페이지 내의 동일한 태그에 모두 적용됨[단점])
+          4) 전체 : * 바디 안 전체 모든 요소를 바꿔버린다 
+          5) 자손(하위) : 자식+손자 {meta, title , ul il, head ,body 등등} [부모 선택자 자식선택자] 공백이 있다
+          6) 자식 : [부모 선택자 > 자식 선택자] 꺽쇠가 들어가면 자식 선택자
+          7) 형제 : +  or  ~ 선택자 + 선택자(바로 뒤따라 오는 선택자 요소만)
+                             선택자 ~ 선택자(뒤따라 오는 선택자 요소)
+          8) 그룹 : 다양한 선택자 요소에 동일한 디자인을 적용    
+          9) 속성 : [속성명], [속성명 = "value"], [속성명~="value"], [속성명|="value"], [속성명^="value"]
+                   [속성명$="value"], [속성명*="value"]            {대괄호 안에 속성명 써주기[]}               
+
+
+     -->
+
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>형제 (하위) 선택자</h2>
+      <h2>형제 (하위) 선택자</h2>
+
+      <nav>
+        <h2>제목1</h2>
+      </nav>
+      <h2>타이틀</h2>
+      <h2>타이틀</h2>
+    </div>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        color: rgb(152, 3, 221);
+      }
+
+      /* ul 태그 안 모든 자손 요소 색깔을 바꿔줘 */
+      ul * {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. selector (선택자)
+          1) class  : 전역 속성인 클래스를 이용하기 
+          2) id : 전역 속성인 id 를 이용하기
+          3) tag : 태그 이용 (현재 페이지 내의 동일한 태그에 모두 적용됨[단점])
+          4) 전체 : * 바디 안 전체 모든 요소를 바꿔버린다 
+     -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>heading3</h3>
+    <h1>title</h1>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+    </ul>
+  </body>
+</html>
