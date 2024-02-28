@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../reset.css" /> -->
+    <style>
+      body {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 1.5em; /* 16px * 1.5 = 24px */
+      }
+      h1 {
+        font-size: 1.2em; /* 16px * 1.2 = 19.2px */
+      }
+
+      p {
+        /* width: 800px; */
+        font-size: 1em;
+        width: 100vw;
+      }
+      p span {
+        font-size: 0.8em; /* 16 * 0.8 = 12.8px */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        css 단위
+          - 모니터: px, em, %
+
+          - px: 고정크기 브라우저의 너비크기를 줄이면 하단의 스크롤이 생겨서 문자열이 압축되지 않음
+          - em: em 단위가 쓰여진 곳의 폰트 사이즈 배수 16px 을 기반으로 배수를 줄 수 있다
+          - rem: rem 단위가 쓰여진 곳의 폰트 사이즈 배수(:root 에서 지정)
+          vw, vh(viewport width, viweport height)
+          -브라우저 흰색 영역 + margin => vw 가 필요한 크기
+     -->
+
+    <h1>css 기본 문법</h1>
+    <h2>단위</h2>
+
+    <p>
+      <span>Lorem ipsum</span> , dolor sit amet consectetur adipisicing elit. Aperiam, doloremque veritatis ea delectus et quod voluptatum?
+      Consequatur omnis iste sunt aspernatur at neque mollitia temporibus reprehenderit. Natus dignissimos illum maxime ex! Officia sunt laboriosam id
+      quidem atque, tempore porro laudantium facilis velit nisi magni dicta numquam, delectus, beatae est. Nobis.
+    </p>
+  </body>
+</html>

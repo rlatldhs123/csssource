@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 디스에이블드 된 요소에 테두리 바꾸기(보더) 배경색 바꾸기 */
+      /* 체크드된 요소에 글자 색만 변경 */
+
+      [type="text"]:disabled {
+        border: 1px solid aqua;
+        background-color: blueviolet;
+      }
+      [type="radio"]:checked + label {
+        color: red;
+      }
+      /*  같이 따라 나오는 형제 요소인 레이블을 지정 해줘야 한다
+       */
+    </style>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" disabled />
+      </fieldset>
+      <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요</p>
+        <div>
+          <input type="radio" name="subject" id="" value="speaking" checked />
+          <label for="">회화</label>
+          <input type="radio" name="subject" id="" value="grammer" />
+          <label for="">문법</label>
+          <input type="radio" name="subject" id="" value="writing" />
+          <label for="">작문</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

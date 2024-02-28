@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p.letter {
+        color: aqua;
+        text-align: justify; /* left, centor, right, justify */
+        letter-spacing: 10px; /* 문자 하나 간격 */
+      }
+      p.word {
+        word-spacing: 10px; /* 단어 하나 간격 */
+      }
+
+      h1 {
+        /* 
+         */
+        /* text-decoration: line-through;
+        text-decoration: line-through; */
+        text-decoration: underline overline; /* 언더라인 오버라인 둘다 한번에 줄 수도 있다 */
+        text-decoration-color: aqua;
+      }
+      h2:hover {
+        text-shadow: 2px 2px 5px red;
+        transition: 0.4s;
+      }
+      p.uppercase {
+        text-transform: uppercase;
+      }
+      p.lowercase {
+        text-transform: lowercase;
+      }
+      p.capitalize {
+        text-transform: capitalize;
+      }
+      /* 단어의 시작만 대문자로 */
+    </style>
+  </head>
+  <body>
+    <!-- 
+        text
+          - color (색상)
+          - alignment (정렬)   text-align: ;
+          - spacing (간격)
+          - decoration
+          - shadow
+          - transform : 대소문자 변경
+     -->
+    <p class="uppercase">Lorem ipsum dolor sit amet.</p>
+    <p class="lowercase">Lorem ipsum dolor sit amet.</p>
+    <p class="capitalize">Lorem ipsum dolor sit amet.</p>
+    <h1>HTML / CSS / JAVASCRIPT / AJAX</h1>
+    <h2>Text shadow effect</h2>
+    <p class="letter">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quae deleniti? Eos esse et at aut tempora? Pariatur ut velit consequatur natus
+      repudiandae ipsum earum iure aliquid ipsam, eius possimus dicta fuga non molestias nihil numquam sed optio. Dicta excepturi repudiandae aut, est
+      eligendi at aperiam? Delectus nesciunt itaque minus nemo soluta animi aliquid quisquam quis illum inventore distinctio accusamus dolores, quae
+      corrupti enim atque molestiae? Aut corporis magnam eveniet atque facilis accusantium maxime ab, velit voluptas id excepturi quis delectus in
+      ducimus repellat tenetur pariatur minus nesciunt similique. Adipisci ad sapiente quasi unde atque officia quaerat reprehenderit error! Error?
+    </p>
+    <p class="word">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quae deleniti? Eos esse et at aut tempora? Pariatur ut velit consequatur natus
+      repudiandae ipsum earum iure aliquid ipsam, eius possimus dicta fuga non molestias nihil numquam sed optio. Dicta excepturi repudiandae aut, est
+      eligendi at aperiam? Delectus nesciunt itaque minus nemo soluta animi aliquid quisquam quis illum inventore distinctio accusamus dolores, quae
+      corrupti enim atque molestiae? Aut corporis magnam eveniet atque facilis accusantium maxime ab, velit voluptas id excepturi quis delectus in
+      ducimus repellat tenetur pariatur minus nesciunt similique. Adipisci ad sapiente quasi unde atque officia quaerat reprehenderit error! Error?
+    </p>
+  </body>
+</html>

@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .ecosystem {
+        color: red;
+      }
+      .animal {
+        color: blue;
+      }
+      #text {
+        color: green;
+      }
+      #text {
+        color: lightcoral !important;
+      }
+      /* 동일한 영역에 대해 선택자가 달라진다면 기본우선순위 (작성순서) 와 다르게 돌아감 */
+      .area p {
+        color: aqua;
+      }
+      p {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <!-- 
@@ -21,6 +42,42 @@
          selector {color:blue;font-size:12px;}
          h1 {color:blue;
             font-size:12px;}
+
+
+        css 
+           - 상속(주로 글자를 다루는 속성들이 상속됨)
+           - 동일한 요소에 대해 여러 번 디자인 지정 가능(아래쪽에 선언된 디자인 우선)
+           - 직접 지정하는게 우선순위가 더 높다
+           - 선택자 우선순위
+               1등 !important
+               2등 인라인 선언 <> 태그에 직접 선언 하는 방식
+               3등 아이디 .
+               4등 클래스 #
+               5등 태그
+               6등 전체(*)
+               7등 상속
+
+                 가상 클래스 :   :hover, :link ...=> 클래스 선택자로 간주
+                 가상 요소 -  ::before,  ::after...=> 태그 선택자
+                 부정    - :not()  => 우선순위 없음 취급도 안함
+
+               ps) 선택자가 동일하다면 작성 순서 우선이다
      -->
+    <div class="ecosystem">
+      <div class="animal">
+        동물
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <div class="plant">식물</div>
+    </div>
+    <div class="area">
+      <p id="text" style="color: hotpink">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci corrupti recusandae eveniet facere rem hic. Tempore totam aliquam
+        deleniti dolore assumenda sint quae deserunt dolorem autem odio vero debitis, quidem sapiente doloribus quo corporis, quos accusamus beatae
+        nostrum quas quia similique? Magnam praesentium quas rem iste eveniet provident quod.
+      </p>
+    </div>
   </body>
 </html>

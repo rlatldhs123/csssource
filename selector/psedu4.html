@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        width: 60%;
+      }
+      /* 행에 마우스 올렸을 떄 배경색 변경 */
+      /* 짝수 행일 때만 배경색을 바꾸고 싶음 */
+      tr:nth-child(2n):hover {
+        background-color: rgb(0, 89, 255);
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>제목1</th>
+        <th>제목2</th>
+        <th>제목3</th>
+      </tr>
+      <tr>
+        <td>컬럼1</td>
+        <td>컬럼2</td>
+        <td>컬럼3</td>
+      </tr>
+      <tr>
+        <td>컬럼1</td>
+        <td>컬럼2</td>
+        <td>컬럼3</td>
+      </tr>
+      <tr>
+        <td>컬럼1</td>
+        <td>컬럼2</td>
+        <td>컬럼3</td>
+      </tr>
+    </table>
+  </body>
+</html>
