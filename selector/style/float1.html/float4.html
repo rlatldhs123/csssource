@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        vertical-align: top; /* 이미지 하단 공백 없애는 코드 */
+      }
+      .clearfix div {
+        float: left;
+        margin-right: 10px;
+        border: 1px solid;
+      }
+      .clearfix {
+        background-color: red;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block; /* << 고정 된 코드이다 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>float 속성</h1>
+    <div class="clearfix">
+      <div>
+        <img src="https://placehold.co/100" alt="" />
+      </div>
+      <div>
+        <img src="https://placehold.co/100" alt="" />
+      </div>
+      <div>
+        <img src="https://placehold.co/100" alt="" />
+      </div>
+    </div>
+    <div>
+      <h2>float 속성 해지</h2>
+    </div>
+  </body>
+</html>
