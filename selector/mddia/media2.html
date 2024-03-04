@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 이미지가 해상도가 클때 해당 구문으로 사용해서 이미지가 전체적으로 나올 수 있게 해줌 =>  background-size: cover; */
+      body {
+        background: url(../style/bg0.jpg) no-repeat fixed;
+        background-size: contain;
+        transition: 0.8s;
+      }
+      @media screen and (max-width: 1024px) {
+        body {
+          background: url(../style/bg1.jpg) no-repeat fixed;
+          background-size: contain;
+          transition: 0.8s;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          background: url(../style/bg2.jpg) no-repeat fixed;
+          background-size: contain;
+          transition: 0.8s;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        body {
+          background: url(../style/bg3.jpg) no-repeat fixed;
+          background-size: contain;
+          transition: 0.8s;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

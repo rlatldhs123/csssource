@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border-bottom: 1px solid #ddd; /* 선두 꼐 선모양 선색상*/
+      }
+      table {
+        border-collapse: collapse; /* 이웃하는 셀 견계선 합쳐서 단일선으로 표시*/
+        width: 100%;
+      }
+      /* tr:hover {
+        background-color: rgba(0, 255, 255, 0.247);
+        transition: 0.5s;
+      } */
+
+      tr:nth-child(2n):hover {
+        background-color: rgba(255, 0, 98, 0.247);
+        transition: 0.5s;
+      }
+      th {
+        background-color: blue;
+        color: cadetblue;
+      }
+      caption {
+        caption-side: bottom; /* 기본 값은 top 이다 */
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Customers
+      </caption>
+      <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+      </tr>
+      <tr>
+        <td>peter</td>
+        <td>griffin</td>
+      </tr>
+      <tr>
+        <td>lois</td>
+        <td>griffin</td>
+      </tr>
+    </table>
+  </body>
+</html>

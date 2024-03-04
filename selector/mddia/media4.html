@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        background-color: #333;
+      }
+      .wrapper a {
+        /* 패딩 14 좌우 16 글자색 f2f2f2  */
+
+        padding: 14px 16px;
+        color: #f2f2f2;
+        text-decoration: none;
+        display: inline-block; /* 패딩을 인식시키기위해 블럭요소를 넣지만 옆으로 나열되어야 하기에 인라인 블럭을 사용*/
+      }
+      .wrapper a:hover {
+        /* 배경색 #ddd 글자색 검정 */
+        background-color: #ddd;
+        color: black;
+        transition: 0.5s;
+      }
+
+      /* 0~600 일때 미디어 */
+      @media screen and (max-width: 600px) {
+        .wrapper a {
+          float: none;
+          display: block;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>메뉴</h1>
+
+    <div class="wrapper clearfix">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+  </body>
+</html>

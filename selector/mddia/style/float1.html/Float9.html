@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소에 박스사이즈 설정  */
+      /* 헤더 요소 : 배경색 #333, 안쪽 여백 30 가운데 정렬 글꼴 크기 35px 글자색 흰색 */
+      /* nav 요소 : 높이 : 500px 배경색 #ccc, 안쪽 여백 20px  */
+      /*  article 요소 : 높이 : 500px 배경색 #f1f1f1, 안쪽 여백 20px  */
+      /* footer 요소 : 배경색 #777, 안쪽 여백 10p 가운데 정렬 글자색 흰색 */
+
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #333;
+        padding: 30px;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+      }
+      nav {
+        height: 500px;
+        background-color: #ccc;
+        padding: 20px;
+        float: left;
+        width: 30%;
+      }
+      article {
+        height: 500px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        width: 70%;
+        float: left;
+      }
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">location</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Londen</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat accusantium rem sit ut in aliquid voluptates. Libero perferendis modi
+          vitae, possimus eaque numquam, explicabo perspiciatis nesciunt officiis voluptatum, voluptas hic?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptas doloremque assumenda quo repellat nihil nulla quasi expedita, iure
+          culpa, deleniti veritatis adipisci labore enim alias et ipsam. Quae illo eius quod esse nihil nulla delectus non quisquam ducimus, id natus
+          omnis exercitationem saepe nostrum. Consectetur dolore cum optio sint ad natus exercitationem illum, magni, alias nulla accusamus animi
+          dolores quidem, inventore blanditiis doloremque ducimus nesciunt enim maiores consequatur omnis autem! Suscipit iure laboriosam modi commodi
+          odit porro cupiditate! Quidem repudiandae deserunt recusandae. Blanditiis aspernatur obcaecati quae perferendis iusto quam, sed ut earum.
+          Quae incidunt dignissimos, corporis consequuntur praesentium ea!
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

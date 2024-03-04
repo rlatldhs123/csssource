@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul.a {
+        list-style-type: circle;
+      }
+      ul.b {
+        list-style-type: square;
+      }
+      ul.c {
+        list-style-type: disc;
+      }
+
+      ol.a {
+        list-style-type: upper-roman;
+        list-style-position: inside;
+      }
+      ol.b {
+        list-style-type: upper-alpha;
+        list-style-position: outside;
+      }
+      ol.c {
+        list-style-type: lower-alpha;
+        list-style-image: url("");
+      }
+      /* 리스트 스타일 
+         1) type : circle,square,disc(기본)
+             I,i a,A ,1
+
+               list-style-position: inside; : 마커가 나오는 위치 안쪽으로
+               list-style-position: outside; : 마커가 나오는 위치 (기본 값)
+                list-style-image: url(""); : 마커 대신 사용할 이미지 지정
+          */
+    </style>
+  </head>
+  <body>
+    <ul class="a">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ul>
+    <ul class="b">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ul>
+    <ul class="c">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ul>
+
+    <ol class="a">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ol>
+    <ol class="b">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ol>
+    <ol class="c">
+      <li>HTML 5</li>
+      <li>css3</li>
+      <li>JAVASCRIPT</li>
+    </ol>
+  </body>
+</html>

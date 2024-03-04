@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .port {
+        width: 960px;
+        margin: 100px auto;
+      }
+      .port li {
+        width: 225px;
+        background-color: aqua;
+        list-style-type: none;
+        float: right;
+        height: 225px;
+      }
+      li {
+        border: solid;
+        border-right-color: black;
+      } */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .port {
+        width: 960px;
+        margin: 100px auto;
+        background: black;
+        /* overflow: hidden; */
+      }
+      .port li {
+        list-style-type: none;
+        width: 225px;
+        height: 255px;
+        background: teal;
+        margin-right: 20px;
+        float: left;
+      }
+      .port li:last-child {
+        margin-right: 0;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="port clearfix">
+      <li>pic1</li>
+      <li>pic2</li>
+      <li>pic3</li>
+      <li>pic4</li>
+    </ul>
+  </body>
+</html>

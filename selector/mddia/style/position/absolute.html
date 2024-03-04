@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* container : 너비 500 높이 300 가운데,  배경색 노랑 */
+      /* box : 너피 100 높이 100 */
+      /* abc 배경색 전부 임의 */
+      body {
+        margin-top: 200px;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin: 0 auto;
+        position: relative;
+        /* margin 0 auto 박스를 가운데로 정렬 */
+      }
+      .box {
+        /* width: 100px; */
+        height: 100px;
+        position: absolute;
+        white-space: nowrap; /* 공백을 기준으로 엔터 하지 말 것 */
+      }
+      .a {
+        background-color: aqua;
+        /* right: 500px; */
+        right: 100%; /* 부모의 크기가 일정치 않은 경우 */
+        top: 100px;
+      }
+      .b {
+        background-color: teal;
+        right: 200px;
+        top: 100px;
+      }
+      .c {
+        background-color: violet;
+        bottom: 100px;
+        left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaa</div>
+      <div class="box b">box b</div>
+      <div class="box c">box ccc</div>
+    </div>
+  </body>
+</html>

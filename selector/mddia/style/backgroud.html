@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg {
+        width: 200px;
+        height: 100px;
+        /* background-color: aqua;
+         */
+        background: red; /* 축약형 형태로 작성해도 상관 없다*/
+      }
+      .bg {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-position: 100px 50px; /* 레프트 탑이 기본 값이다 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        background
+        - 색상
+        - 이미지
+            backgroud-image
+            backgroud-repeat : 이미지 반복
+            backgroud-positon : 이미지 위치
+            backgroud-attchment : 이미지 스크롤 여부
+     -->
+    <div class="bg"></div>
+  </body>
+</html>

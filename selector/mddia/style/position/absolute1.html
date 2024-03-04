@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 1px solid black;
+        position: absolute;
+        left: 80px;
+        top: 80px;
+      }
+      img {
+        vertical-align: bottom;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        position : 요소의 위치 지정 
+        1) static - 기본(요소의 기본 배치 방법 따라감)
+        2) reative - 요소 자신을 기준으로 배치
+        3) absolute - 위치상 부모 요소를 기준으로 배치
+        4) fixed - 브라우저(뷰포트)를 기준으로 배치
+             - top bottom left right 로 설정 가능 부모요소 탈피 가능
+        5) sticky - 스크롤 영역 기준으로 배치
+     -->
+
+    <!-- 
+        absolute - 위치 상 부모요소를 기준으로 배치
+
+        부모요소 : 부모요소를 지정하지 않으면 화변 (뷰포트)가 기준이 됨 => fixed랑 비슷해지기 때문에 이 방식을 사용하지느 않는다
+                   position  이 부여된 다른 요소 가 부모 요소가 됨 (대부분 relative)
+
+      -->
+    <div class="box">
+      <img src="https://placehold.co/100" alt="" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eum! Officiis, perspiciatis! Accusantium aliquam fugit magnam impedit
+      repellendus maiores soluta laboriosam, hic cumque dicta officia ex nihil eius perspiciatis! Facilis necessitatibus possimus optio earum culpa
+      est laboriosam tenetur magni commodi unde, natus officiis repellat quod tempora quam id nam mollitia vel eligendi. Eius cum, aspernatur veniam
+      perferendis illo corrupti. Fuga nobis, enim accusantium repudiandae, voluptate harum deserunt ab aut praesentium hic, nemo a. Voluptas dolor nam
+      ratione. Sit exercitationem commodi iure fugiat, impedit fuga alias, ipsam odio, omnis eligendi eveniet laborum est minus cumque cum accusamus
+      quaerat amet quidem deleniti.
+    </p>
+  </body>
+</html>

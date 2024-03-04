@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--"width=device-width 디바이스의 넓이를 따라간다 initial-scale=1.0" 1배수로 따라간다 -->
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        background-color: yellow;
+        height: 100px;
+      }
+      @media screen and (max-width: 960px) {
+        .container {
+          background-color: aqua;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .container {
+          background-color: hotpink;
+        }
+      }
+      @media screen and (max-width: 540px) {
+        .container {
+          background-color: crimson;
+        }
+      }
+      /* 각 픽셀의 범위를 넘어가는 순간 컬러 색이 바뀜 (반응형) */
+    </style>
+  </head>
+  <body>
+    <!-- 미디어 쿼리 
+      @media screen {} => 기본 타입
+      반응형 웹을 만들때 필요함 
+
+      1. "width=device-width, initial-scale=1.0" {기본 값}
+      2. 미디어 쿼리
+            
+        -->
+    <div class="container"></div>
+  </body>
+</html>

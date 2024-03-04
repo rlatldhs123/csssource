@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #222;
+      }
+      .grid {
+        width: 500px;
+        background-color: white;
+        margin: 0 auto;
+        overflow: hidden;
+        /* 인라인 블럭으로 했을때 적용 가능한 방식 */
+        /* font-size: 0;
+        text-align: right; */
+      }
+      /* .grid-item {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+      } */
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+      .grid-item.a {
+        background-color: orange;
+        float: left;
+      }
+      .grid-item.b {
+        background-color: orangered;
+      }
+      .grid-item.c {
+        background-color: red;
+      }
+      .claerfix {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        inline-block vs float
+           
+           1. inline-block
+              하단 공백이 무조건 생김 ( font-size: 0; 으로 제거 가능 ) 
+              태그 다음에 있는 엔터 때문에 요소 사이에 공백이 생김 font-size: 0 으로 해결가능 하지만 글자가 들어가게되면 해결 불가
+              
+
+              장점 : text-align 사용 가능
+
+
+           2. float 
+              모든 자식들이  float 된 상태이면 부모는 자식요소인 줄 모름
+              - overflow:hidden
+              - clearfix 클래스 추가 후 작업
+              - 장점: inline-block 정렬 개념과 다르게 오른쪽 배치 가능
+              - 요소들을 왼쪽, 오른쪽으로 나눠서 배치 가능
+     -->
+    <div class="grid clearfix">
+      <div class="grid-item a"></div>
+      <div class="grid-item b"></div>
+      <div class="grid-item c"></div>
+    </div>
+  </body>
+</html>
