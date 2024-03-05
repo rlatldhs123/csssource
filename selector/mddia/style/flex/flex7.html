@@ -5,90 +5,45 @@
     <meta name="viewport" content="width=], initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* .container {
-        display: flex;
-
-        border: 2px solid;
-      }
-      .container div {
-        width: 100px;
-
-        height: 100px;
-        border: 4px dashed black;
-        border-radius: 10px;
-        font-size: 30px;
-      } */
-      .container div:nth-child(1) {
-        background-color: aqua;
-        /* order: 1; */
-      }
-      .container div:nth-child(2) {
-        background-color: red;
-      }
-      .container div:nth-child(3) {
-        background-color: yellow;
-      }
-      .container div:nth-child(4) {
-        background-color: gray;
-        /* order: 1; */
-      }
-
-      /* flex-grow */
-      /* .parent1 .item:nth-child(1) {
-        flex-grow: 0;
-      }
-      .parent1 .item:nth-child(2) {
-        flex-grow: 0;
-      }
-      .parent1 .item:nth-child(3) {
-        flex-grow: 0;
-      }
-      .parent1 .item:nth-child(4) {
-        flex-grow: 1;
-      }
-      .parent2 .item:nth-child(1) {
-        flex-grow: 1;
-      }
-      .parent2 .item:nth-child(2) {
-        flex-grow: 3;
-      }
-      .parent2 .item:nth-child(3) {
-        flex-grow: 1;
-      }
-      .parent2 .item:nth-child(4) {
-        flex-grow: 0;
-      }
-      .parent3 .item:nth-child(1) {
-        flex-grow: 1;
-      }
-      .parent3 .item:nth-child(2) {
-        flex-grow: 2;
-      }
-      .parent3 .item:nth-child(3) {
-        flex-grow: 1;
-      }
-      .parent3 .item:nth-child(4) {
-        flex-grow: 2;
-      } */
-
-      /* flex-shrink: ; / align-item 기본 값 사용 */
-
-      .parent4 .item:nth-child(3) {
-        flex-shrink: 0;
-      }
       .container {
         display: flex;
 
         border: 2px solid;
       }
-      .container div {
-        width: 100px;
-        margin: 10px;
-        border: 4px dashed black;
+      .container .item {
+        /* width: 100px; */
+        background-color: dodgerblue;
+
+        border: 4px dashed red;
         border-radius: 10px;
         font-size: 30px;
-        background-color: dodgerblue;
+        flex-grow: 1;
+        flex-basis: 0;
       }
+      .container .item:hover {
+        /* width: 100px; */
+        background-color: yellowgreen;
+
+        border: 4px dashed red;
+        border-radius: 10px;
+        font-size: 30px;
+        flex-grow: 1;
+        flex-basis: 0;
+        transition: 0.8s;
+      }
+      .container + div .item {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+        background-color: violet;
+        text-align: center;
+        /* line-height: 100px; 박스의 height 에 맞춤 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 너비 100 높이 100 배경색 임의 */
     </style>
   </head>
   <body>
@@ -133,42 +88,22 @@
              
              -flex-shrink : item 너비 감쇼 비율(기본 값 1)
                              값이 높을 수록 많은 너비가 감소
+             -flex-basis : flex-grow:1 로 설정한 경우 content 가 가지고 있는 부분을 제외한 여백을 나눠가지는 형태
+                          전체 아이템의 너비가 일정치 않게 됨(컨텐츠의 너비가 다를 수 있기 때문에)
+                          ==> 이걸 해결하기 위해 사용(컨텐츠를 포함한 영역의 너비설정)               
                    
                 
 
 
 
      -->
-    <div class="container parent1">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
+    <div class="container">
+      <div class="item item1">good job</div>
+      <div class="item item2">B</div>
+      <div class="item item3">Hello world</div>
     </div>
-    <div class="container parent2">
+    <div>
       <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
     </div>
-    <div class="container parent3">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-    </div>
-    <div class="container parent4">
-      <div class="item">A</div>
-      <div class="item">B</div>
-      <div class="item">C</div>
-      <div class="item">D</div>
-      <div class="item">E</div>
-      <div class="item">F</div>
-      <div class="item">G</div>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae, sequi corrupti minima, blanditiis autem quaerat eum voluptate
-      reprehenderit molestias iste dolores animi ut ea non amet id. Impedit, necessitatibus.
-    </p>
   </body>
 </html>

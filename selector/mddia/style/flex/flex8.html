@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소 크기 산정시 border 까지 포함 */
+
+      /* body 배경색 #ecf0f1 */
+
+      /* wrapper max-width 60rem wudth 100%, margin2rem auto */
+
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background-color: white;
+
+        width: 60%;
+        padding: 1.618rem;
+        /* 배경색 흰색, 위드 60% 패딩 1.618rem */
+      }
+      .flexbg .sidebar {
+      }
+      .flexbg .left {
+        order: 1;
+        /* 배경색 #3498db */
+      }
+      .flextbg .right {
+        order: 3;
+        /* 배경색 #34495e */
+      }
+      .flexbg main {
+        order: 1;
+        background-color: white;
+
+        width: 60%;
+        padding: 1.618rem;
+        /* 배경색 흰색, 위드 60% 패딩 1.618rem */
+      }
+      .flexbg .sidebar {
+      }
+      .flexbg .left {
+        order: 1;
+        width: 50%;
+        /* 배경색 #3498db */
+      }
+
+      /* 0~480 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg"></div>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita velit voluptas, mollitia libero facere quas reiciendis fuga animi ut
+        sequi. Iusto alias eaque sit, nobis in modi deserunt autem perferendis, illo repellendus excepturi pariatur natus repellat adipisci ipsam sunt
+        nisi. Quidem eum, delectus dolorem illo voluptates adipisci eaque libero obcaecati dolorum, id fugit perspiciatis esse, saepe natus. Suscipit,
+        sit laudantium! Ipsa optio blanditiis iusto fugit voluptates nemo sit voluptas similique aperiam odit cupiditate natus, mollitia quisquam aut
+        commodi! Eum, qui culpa quos molestiae porro, mollitia officia, obcaecati cupiditate ipsa sequi iure eos et sunt perferendis iste inventore
+        totam nam!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita velit voluptas, mollitia libero facere quas reiciendis fuga animi ut
+        sequi. Iusto alias eaque sit, nobis in modi deserunt autem perferendis, illo repellendus excepturi pariatur natus repellat adipisci ipsam sunt
+        nisi. Quidem eum, delectus dolorem illo voluptates adipisci eaque libero obcaecati dolorum, id fugit perspiciatis esse, saepe natus. Suscipit,
+        sit laudantium! Ipsa optio blanditiis iusto fugit voluptates nemo sit voluptas similique aperiam odit cupiditate natus, mollitia quisquam aut
+        commodi! Eum, qui culpa quos molestiae porro, mollitia officia, obcaecati cupiditate ipsa sequi iure eos et sunt perferendis iste inventore
+        totam nam!
+      </p>
+    </main>
+    <aside class="sidebar left">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias consequatur tempore vitae provident ipsum, fugit error eos doloribus
+        reiciendis nostrum natus. Ab accusamus eos inventore aut officiis, esse laboriosam accusantium omnis maxime distinctio atque recusandae
+        consequatur asperiores laudantium doloremque, quod praesentium hic sequi facilis labore natus! Tempore ea quisquam porro.
+      </p>
+    </aside>
+    <aside class="sidebar right">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias consequatur tempore vitae provident ipsum, fugit error eos doloribus
+        reiciendis nostrum natus. Ab accusamus eos inventore aut officiis, esse laboriosam accusantium omnis maxime distinctio atque recusandae
+        consequatur asperiores laudantium doloremque, quod praesentium hic sequi facilis labore natus! Tempore ea quisquam porro.
+      </p>
+    </aside>
+  </body>
+</html>

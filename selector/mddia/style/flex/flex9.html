@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: black;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: red;
+      }
+      .container {
+        display: flex;
+      }
+      .main-content,
+      .sidebar {
+        background-color: #eee;
+        padding: 6px;
+        margin: 10px;
+      }
+
+      .panal {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column; /* 플렉스 방향 틀기 */
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="main-content">
+        <div class="panel">
+          <h1>main title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero delectus atque eum, nam quidem odio tempora reiciendis maiores dolorem
+            provident asperiores reprehenderit eos ducimus, eligendi ut excepturi exercitationem impedit illo!
+          </p>
+          <img src="http://placehold.co/100x120" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ab, nulla sequi, atque suscipit sunt, officia deleniti dolor doloremque
+            fugiat sit voluptas neque tempore dolores ex recusandae eligendi possimus. Laudantium illum nemo nulla dolorem. Fuga aliquid magni
+            pariatur id sint ipsam, excepturi quae eligendi natus asperiores eos, sed cupiditate culpa?
+          </p>
+          <h3>subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit suscipit dolorum. Cumque ipsa facilis architecto veniam deleniti modi,
+            possimus sequi cupiditate qui, optio libero facere eaque molestiae sint magnam laudantium, ut quod! Dolorem architecto doloribus ullam
+            minima quia expedita molestias. Nihil eveniet unde soluta consequuntur accusamus doloribus velit optio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit suscipit dolorum. Cumque ipsa facilis architecto veniam deleniti modi,
+            possimus sequi cupiditate qui, optio libero facere eaque molestiae sint magnam laudantium, ut quod! Dolorem architecto doloribus ullam
+            minima quia expedita molestias. Nihil eveniet unde soluta consequuntur accusamus doloribus velit optio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sit suscipit dolorum. Cumque ipsa facilis architecto veniam deleniti modi,
+            possimus sequi cupiditate qui, optio libero facere eaque molestiae sint magnam laudantium, ut quod! Dolorem architecto doloribus ullam
+            minima quia expedita molestias. Nihil eveniet unde soluta consequuntur accusamus doloribus velit optio.
+          </p>
+        </div>
+      </section>
+      <aside class="sidebar">
+        <div class="panal">
+          <h3>item 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est, fuga, quos vitae soluta itaque dolorum et consectetur voluptate odio
+          </p>
+        </div>
+        <div class="panal">
+          <h3>item 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="panal">
+          <h3>item 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est,</p>
+        </div>
+        <div class="panal">
+          <h3>item 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est, fuga, quos vitae soluta itaque dolorum et consectetur voluptate odio
+            a unde perspiciatis quae ab. Perspiciatis veniam minima quas laboriosam.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
